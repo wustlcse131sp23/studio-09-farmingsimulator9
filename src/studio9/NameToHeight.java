@@ -20,8 +20,33 @@ public class NameToHeight {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		// FIXME
-		throw new NotYetImplementedException();
-
+		Map<String, Double> DungFeet = new HashMap<String, Double>();
+		
+		DungFeet.put("riley", 97.0);
+		DungFeet.put("dung", 443.0);
+		DungFeet.put("jack", 4.69);
+		String name= in.next();
+		while(name != "quit"){
+//			DungFeet.put(in.next(), in.nextDouble());
+			
+			name= in.next();
+			if (DungFeet.get(name)!=null) {
+				System.out.println(DungFeet.get(name));
+			}
+			else {
+				System.out.println("Eat shit");
+			}
+			/*for(String name : DungFeet.keySet()) {
+				if(input.equals(name)) {
+					System.out.println(DungFeet.get(name));
+				}
+				else {
+					System.out.println("eat shit");
+				}*/
+			}
+		
+			}
+		
 	}
-}
+	
+
